@@ -1,5 +1,5 @@
 # Person Inheritance Hierarchy  
-A C++ program demonstrating **Encapsulation**, **inheritance** and **polymorphism** using onstructors and destructors , Dynamic memory allocation with `new` and `delete` with three classes:  
+A C++ program demonstrating **Encapsulation**, **inheritance** and **polymorphism** using constructors and destructors , Dynamic memory allocation with `new` and `delete` with three classes:  
 - Base class: `Person`  
 - Derived classes: `Student` and `Doctor`  
 
