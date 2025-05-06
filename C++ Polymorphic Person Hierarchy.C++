@@ -59,6 +59,11 @@ class Student : public Person {
             this->GPA = GPA;  // Set GPA value
             cout << "Your GPA is Acceptable" << endl;
         }
+        else if (GPA >= 2.5 && GPA < 3.0) 
+        {
+            this->GPA = GPA;
+            cout << "Your GPA is Fair" << endl;
+        }
         else if (GPA >= 3 && GPA <= 3.2) 
         {
             this->GPA = GPA;
