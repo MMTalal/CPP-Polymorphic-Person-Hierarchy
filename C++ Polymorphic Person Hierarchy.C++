@@ -32,11 +32,8 @@ class Person {
             return Name;  // Returning the name of the person
         }
 
-        // Virtual function to display basic information about the person
-        virtual void getInfo() 
-        {
-            cout << "The person name is " << getName() << ", ";  // Printing person's name
-        }
+        // Pure virtual function making Person an abstract class
+        virtual void getInfo() = 0;
 
         // Virtual destructor for cleaning up when a Person object is destroyed
         virtual ~Person() 
@@ -112,9 +109,10 @@ class Student : public Person {
         }
 
         // Overridden function to display information about the student
+        // Implementation of Person's pure virtual function for Student
         void getInfo() override 
         {
-            Person::getInfo();  // Call the base class getInfo() to print the name
+            cout << "The person name is " << getName() << ", ";  // Printing person's name
             cout << "The GPA is " << getGPA() << endl;  // Print the student's GPA
         }
 
@@ -171,9 +169,10 @@ class Doctor : public Person {
         }
 
         // Overridden function to display information about the doctor
+        // Implementation of Person's pure virtual function for doctor
         void getInfo() override 
         {
-            Person::getInfo();  // Call the base class getInfo() to print the name
+            cout << "The person name is " << getName() << ", ";  // Printing person's name
             cout << "The salary is " << getSalary() << endl;  // Print the doctor's salary
         }
 
